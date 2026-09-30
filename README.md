@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Iniciar Sesión</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <main class="contenido">
+
+        <section class="tarjeta-login">
+
+            <!-- Encabezado -->
+            <div class="encabezado">
+
+                <div class="icono">
+                    ✓
+                </div>
+
+                <h1 class="titulo">
+                    Iniciar Sesión
+                </h1>
+
+                <p class="subtitulo">
+                    Ingresa tus datos para continuar
+                </p>
+
+            </div>
+
+
+            <!-- Formulario -->
+            <form>
+
+                <!-- Usuario -->
+                <div class="campo">
+
+                    <label
+                        for="usuario"
+                        class="form-label">
+
+                        Usuario
+
+                    </label>
+
+                    <input
+                        type="text"
+                        id="usuario"
+                        class="form-control"
+                        placeholder="Ingresa tu usuario">
+
+                </div>
+
+
+                <!-- Contraseña -->
+                <div class="campo">
+
+                    <label
+                        for="password"
+                        class="form-label">
+
+                        Contraseña
+
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        class="form-control"
+                        placeholder="Ingresa tu contraseña">
+
+                </div>
+
+
+                <!-- Recordar -->
+                <div class="opciones">
+
+                    <label class="check">
+
+                        <input
+                            type="checkbox">
+
+                        <span>
+                            Recordarme
+                        </span>
+
+                    </label>
+
+                    <a href="#">
+                        ¿Olvidaste tu contraseña?
+                    </a>
+
+                </div>
+
+
+                <!-- Botón -->
+                <div class="boton">
+
+                    <button
+                        type="submit"
+                        class="btn-entrar">
+
+                        Entrar
+
+                    </button>
+
+                </div>
+
+            </form>
+
+
+            <!-- Registro -->
+            <div class="registro">
+
+                <span>
+                    ¿No tienes una cuenta?
+                </span>
+
+                <a href="#">
+                    Crear cuenta
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
