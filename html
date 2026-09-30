@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gestión de Tareas</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-upp">
+        <div class="container">
+
+            <a class="navbar-brand marca" href="#">
+                <span class="marca-icono">✓</span>
+                Gestión de Tareas
+            </a>
+
+            <button class="navbar-toggler" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-nav ms-auto">
+
+                <a class="nav-link activo" href="#inicio">
+                    Inicio
+                </a>
+
+                <a class="nav-link" href="#resumen">
+                    Resumen
+                </a>
+
+                <a class="nav-link" href="#nueva-tarea">
+                    Nueva tarea
+                </a>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+    <main id="inicio">
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="container">
+
+                <div class="row align-items-center g-4">
+
+                    <div class="col-lg-8">
+
+                        <span class="etiqueta-hero">
+                            PANEL PRINCIPAL
+                        </span>
+
+                        <h1>
+                            Organiza tus tareas de forma sencilla
+                        </h1>
+
+                        <p>
+                            Espacio destinado para consultar el estado general,
+                            registrar nuevas tareas y revisar la actividad reciente.
+                        </p>
+
+                    </div>
+
+
+                    <div class="col-lg-4">
+
+                        <div class="usuario-box">
+
+                            <div class="usuario-icono">
+                                U
+                            </div>
+
+                            <div>
+
+                                <small>
+                                    Usuario
+                                </small>
+
+                                <strong>
+                                    Nombre del usuario
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTENIDO -->
+        <section class="seccion-principal" id="resumen">
+
+            <div class="container">
+
+
+                <!-- CARGA DE DATOS -->
+                <div class="bloque-carga mb-5">
+
+                    <div class="row g-0 align-items-stretch">
+
+                        <div class="col-lg-4 carga-lateral">
+
+                            <span class="numero-seccion">
+                                01
+                            </span>
+
+                            <h2>
+                                Carga de Datos General
+                            </h2>
+
+                            <p>
+                                Área destinada para mostrar información general
+                                relacionada con las tareas registradas.
+                            </p>
+
+                        </div>
+
+
+                        <div class="col-lg-8 carga-contenido">
+
+                            <div class="row g-3">
+
+                                <div class="col-md-6">
+
+                                    <div class="dato">
+
+                                        <span>
+                                            Información
+                                        </span>
+
+                                        <strong>
+                                            Aquí se mostrará la información general.
+                                        </strong>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <div class="dato">
+
+                                        <span>
+                                            Estado
+                                        </span>
+
+                                        <strong>
+                                            Aquí se mostrará el estado de los datos.
+                                        </strong>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TITULO RESUMEN -->
+                <div class="d-flex flex-wrap justify-content-between align-items-end mb-4">
+
+                    <div>
+
+                        <span class="subtitulo">
+                            RESUMEN
+                        </span>
+
+                        <h2 class="titulo-seccion">
+                            Resumen de tareas
+                        </h2>
+
+                    </div>
+
+                    <p class="texto-ayuda mb-1">
+                        Información de ejemplo para la interfaz.
+                    </p>
+
+                </div>
+
+
+                <!-- TARJETAS -->
+                <div class="row g-4 mb-5">
+
+
+                    <!-- TOTAL -->
+                    <div class="col-md-4">
+
+                        <div class="tarjeta-resumen tarjeta-rosa">
+
+                            <div class="icono-resumen">
+                                ≡
+                            </div>
+
+                            <span>
+                                Total
+                            </span>
+
+                            <h3>
+                                --
+                            </h3>
+
+                            <p>
+                                Aquí se mostrará el total de tareas.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PENDIENTES -->
+                    <div class="col-md-4">
+
+                        <div class="tarjeta-resumen tarjeta-azul-claro">
+
+                            <div class="icono-resumen">
+                                ◷
+                            </div>
+
+                            <span>
+                                Pendientes
+                            </span>
+
+                            <h3>
+                                --
+                            </h3>
+
+                            <p>
+                                Aquí se mostrarán las tareas pendientes.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- COMPLETADAS -->
+                    <div class="col-md-4">
+
+                        <div class="tarjeta-resumen tarjeta-azul">
+
+                            <div class="icono-resumen">
+                                ✓
+                            </div>
+
+                            <span>
+                                Completadas
+                            </span>
+
+                            <h3>
+                                --
+                            </h3>
+
+                            <p>
+                                Aquí se mostrarán las tareas completadas.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROGRESO Y ACTIVIDAD -->
+                <div class="row g-4 mb-5">
+
+
+                    <!-- PROGRESO -->
+                    <div class="col-lg-5">
+
+                        <div class="panel-blanco progreso-panel">
+
+                            <span class="subtitulo">
+                                SEGUIMIENTO
+                            </span>
+
+                            <h3>
+                                Progreso de tareas
+                            </h3>
+
+                            <p>
+                                Este espacio mostrará visualmente el avance
+                                de las tareas registradas.
+                            </p>
+
+
+                            <div class="progress progreso">
+
+                                <div
+                                    class="progress-bar"
+                                    role="progressbar"
+                                    style="width: 50%;">
+
+                                    50%
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="d-flex justify-content-between mt-3">
+
+                                <small>
+                                    Inicio
+                                </small>
+
+                                <small>
+                                    Avance
+                                </small>
+
+                                <small>
+                                    Finalización
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ACTIVIDAD -->
+                    <div class="col-lg-7">
+
+                        <div class="actividad-panel">
+
+                            <div class="actividad-cabecera">
+
+                                <div>
+
+                                    <span class="subtitulo">
+                                        ACTIVIDAD
+                                    </span>
+
+                                    <h3>
+                                        Actividad reciente
+                                    </h3>
+
+                                </div>
+
+                                <span class="badge-actividad">
+                                    Actualizaciones
+                                </span>
+
+                            </div>
+
+
+                            <div
+                                class="alert alert-personalizado"
+                                role="alert">
+
+                                <strong>
+                                    Área informativa:
+                                </strong>
+
+                                aquí se mostrarán las actividades recientes.
+
+                            </div>
+
+
+                            <div class="actividad-item">
+
+                                <span class="punto"></span>
+
+                                <div>
+
+                                    <strong>
+                                        Registro de tarea
+                                    </strong>
+
+                                    <p>
+                                        Información de ejemplo pendiente de cargar.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="actividad-item">
+
+                                <span class="punto"></span>
+
+                                <div>
+
+                                    <strong>
+                                        Actualización
+                                    </strong>
+
+                                    <p>
+                                        Aquí aparecerán futuras actualizaciones.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- NUEVA TAREA -->
+                <div
+                    id="nueva-tarea"
+                    class="formulario-seccion mb-5">
+
+
+                    <div class="formulario-cabecera">
+
+                        <span class="numero-seccion">
+                            02
+                        </span>
+
+                        <div>
+
+                            <span class="subtitulo">
+                                REGISTRO
+                            </span>
+
+                            <h2>
+                                Nueva tarea
+                            </h2>
+
+                            <p>
+                                Formulario destinado para registrar una nueva tarea.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <form>
+
+                        <div class="row g-4">
+
+
+                            <!-- NOMBRE -->
+                            <div class="col-md-6">
+
+                                <label
+                                    for="nombre"
+                                    class="form-label">
+
+                                    Nombre de la tarea
+
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="nombre"
+                                    class="form-control"
+                                    placeholder="Aquí se ingresará el nombre">
+
+                            </div>
+
+
+                            <!-- CATEGORIA -->
+                            <div class="col-md-6">
+
+                                <label
+                                    for="categoria"
+                                    class="form-label">
+
+                                    Categoría
+
+                                </label>
+
+                                <select
+                                    id="categoria"
+                                    class="form-select">
+
+                                    <option selected>
+                                        Seleccionar categoría
+                                    </option>
+
+                                    <option>
+                                        Académica
+                                    </option>
+
+                                    <option>
+                                        Personal
+                                    </option>
+
+                                    <option>
+                                        Trabajo
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- DESCRIPCION -->
+                            <div class="col-12">
+
+                                <label
+                                    for="descripcion"
+                                    class="form-label">
+
+                                    Descripción
+
+                                </label>
+
+                                <textarea
+                                    id="descripcion"
+                                    class="form-control textarea"
+                                    placeholder="Aquí se describirá la tarea"></textarea>
+
+                            </div>
+
+
+                            <!-- FECHA -->
+                            <div class="col-md-6">
+
+                                <label
+                                    for="fecha"
+                                    class="form-label">
+
+                                    Fecha
+
+                                </label>
+
+                                <input
+                                    type="date"
+                                    id="fecha"
+                                    class="form-control">
+
+                            </div>
+
+
+                            <!-- PRIORIDAD -->
+                            <div class="col-md-6">
+
+                                <label
+                                    for="prioridad"
+                                    class="form-label">
+
+                                    Prioridad
+
+                                </label>
+
+                                <select
+                                    id="prioridad"
+                                    class="form-select">
+
+                                    <option selected>
+                                        Seleccionar prioridad
+                                    </option>
+
+                                    <option>
+                                        Baja
+                                    </option>
+
+                                    <option>
+                                        Media
+                                    </option>
+
+                                    <option>
+                                        Alta
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- BOTONES -->
+                            <div class="col-12 d-flex flex-wrap gap-3 pt-2">
+
+                                <button
+                                    type="button"
+                                    class="btn btn-principal">
+
+                                    Agregar tarea
+
+                                </button>
+
+
+                                <button
+                                    type="button"
+                                    class="btn btn-secundario">
+
+                                    Cancelar
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+
+                <!-- COMPONENTES -->
+                <div class="row g-4 mb-5">
+
+
+                    <div class="col-lg-7">
+
+                        <div class="componentes-panel">
+
+                            <span class="subtitulo">
+                                COMPONENTES
+                            </span>
+
+                            <h3>
+                                Acciones disponibles
+                            </h3>
+
+                            <p>
+                                Botones destinados para consultar o modificar
+                                información cuando el sistema esté conectado.
+                            </p>
+
+
+                            <div class="d-flex flex-wrap gap-3 mt-4">
+
+                                <button
+                                    type="button"
+                                    class="btn btn-principal">
+
+                                    Actualizar
+
+                                </button>
+
+
+                                <button
+                                    type="button"
+                                    class="btn btn-secundario">
+
+                                    Ver tarea
+
+                                </button>
+
+                            </div>
+
+
+                            <div
+                                class="alert alert-info mt-4">
+
+                                <strong>
+                                    Mensaje informativo:
+                                </strong>
+
+                                aquí se mostrarán mensajes del sistema.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- MODAL -->
+                    <div class="col-lg-5">
+
+                        <div class="modal-preview">
+
+                            <div class="modal-preview-header">
+
+                                <span>
+                                    MODAL
+                                </span>
+
+                                <span>
+                                    ×
+                                </span>
+
+                            </div>
+
+
+                            <div class="modal-preview-body">
+
+                                <h4>
+                                    Vista previa del modal
+                                </h4>
+
+                                <p>
+                                    Este espacio representa la estructura
+                                    del componente Modal de Bootstrap.
+                                </p>
+
+
+                                <div
+                                    class="d-flex justify-content-end gap-2">
+
+                                    <button
+                                        type="button"
+                                        class="btn btn-sm btn-secundario">
+
+                                        Cerrar
+
+                                    </button>
+
+
+                                    <button
+                                        type="button"
+                                        class="btn btn-sm btn-principal">
+
+                                        Confirmar
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row align-items-center g-3">
+
+                <div class="col-md-7">
+
+                    <strong>
+                        Gestión de Tareas
+                    </strong>
+
+                    <p>
+                        Interfaz de ejemplo desarrollada con Bootstrap.
+                    </p>
+
+                </div>
+
+
+                <div class="col-md-5 text-md-end">
+
+                    <span>
+                        © 2026 | Práctica 02
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
